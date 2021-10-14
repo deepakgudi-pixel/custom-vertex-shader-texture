@@ -1,5 +1,5 @@
 
-# <em>custom-vertex-shader-texture</em>
+# <em align="center">custom-vertex-shader-texture</em>
 
 <p>Custom vertex shader and fragment shader with loaded texture  which can used in any javascript framework  and texture can load any images<p>
   
