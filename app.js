@@ -50,7 +50,7 @@ class Sketch {
 
    //creating shaders
   addObjects() {
-    this.geometry = new THREE.PlaneBufferGeometry(.5, .5, 150, 150);
+    this.geometry = new THREE.PlaneBufferGeometry(.7, .7, 150, 150);
     this.material = new THREE.MeshNormalMaterial();
 
     //this shader material has couple of options
