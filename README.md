@@ -1,6 +1,6 @@
-<div align="center">
-# <em>custom-vertex-shader-texture</em>
 
+# <em>custom-vertex-shader-texture</em>
+ <img src="https://github.com/deepakgudi-pixel/custom-vertex-shader-texture/blob/main/planeTexture.gif">
 <p>Custom vertex shader and fragment shader with loaded texture  which can used in any javascript framework  and texture can load any images<p>
   
 <p>You can specify two different types of shaders for each material: <p>
@@ -18,4 +18,4 @@
   <li>UVs are two-dimensional texture coordinates that correspond with the vertex information for your geometry. UVs are vital because they provide the link between a surface mesh and how an image texture gets applied onto that surface.</li>
 
  <p>To know more about UV got to this link https://www.pluralsight.com/blog/film-games/understanding-uvs-love-them-or-hate-them-theyre-essential-to-know</p>
-</div>
+
