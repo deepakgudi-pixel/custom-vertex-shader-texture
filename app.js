@@ -2,6 +2,7 @@ import * as THREE from "https://cdn.skypack.dev/three@0.133.1";
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/controls/OrbitControls.js";
 import fragment from "./shaders/fragment.glsl.js";
 import vertex  from "./shaders/vertex.glsl.js";
+// import girl from "./img/girl.jpeg";
 
 class Sketch {
   constructor(options) {
@@ -49,13 +50,14 @@ class Sketch {
 
    //creating shaders
   addObjects() {
-    this.geometry = new THREE.PlaneBufferGeometry(0.5, 0.5, 50, 50);
+    this.geometry = new THREE.PlaneBufferGeometry(1, 1, 150, 150);
     this.material = new THREE.MeshNormalMaterial();
 
     //this shader material has couple of options
     this.material = new THREE.ShaderMaterial({
       uniforms: {
-        time: {value: 0}
+        time: {value: 0},
+        picTexture: {value: new THREE.TextureLoader().load("https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")},
       },
       side: THREE.DoubleSide,
       fragmentShader: fragment,

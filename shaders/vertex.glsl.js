@@ -76,6 +76,7 @@ float cnoise(vec3 P){
   //declared variables
   uniform float time;
   varying float vNoise;
+  varying vec2 vUv;
 
   void main(){
     vec3 newposition = position;
@@ -89,6 +90,7 @@ float cnoise(vec3 P){
     newposition.z += 0.1 * noise; //(amplitude * noise)
 
     vNoise = noise;
+    vUv = uv;
 
     // newposition.z += 0.05 * sin((newposition.x + 0.25 + time/10.)* 2. * PI);
 
