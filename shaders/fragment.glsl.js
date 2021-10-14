@@ -18,7 +18,7 @@ uniform float time;
 
     gl_FragColor = vec4(finalColor,1.);
     gl_FragColor = vec4(vUv, 0., 1.);
-    gl_FragColor = picView + 0.3 * vec4(vNoise);
+    gl_FragColor = picView + 0.1 * vec4(vNoise);
    }
    `;
 
